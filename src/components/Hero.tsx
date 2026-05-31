@@ -1,7 +1,7 @@
-import { useScrollReveal } from '../hooks/useScrollReveal'
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 export default function Hero() {
-  const ref = useScrollReveal<HTMLElement>()
+  const ref = useScrollReveal<HTMLElement>();
 
   return (
     <section
@@ -10,7 +10,7 @@ export default function Hero() {
       className="scroll-reveal relative flex min-h-[100dvh] flex-col items-center justify-center px-4 py-24 md:px-8"
     >
       <span className="mb-6 rounded-full border border-black/5 bg-black/[0.02] px-4 py-1.5 text-[10px] font-medium uppercase tracking-[0.2em] text-ink-secondary dark:border-white/5 dark:bg-white/[0.02] dark:text-ink-dark-secondary">
-        Designer & Developer
+        Fullstack Developer
       </span>
 
       <h1 className="max-w-5xl text-center font-display text-[clamp(3rem,10vw,7rem)] font-bold leading-[0.95] tracking-tight text-ink dark:text-ink-dark">
@@ -23,8 +23,8 @@ export default function Hero() {
       </h1>
 
       <p className="mt-8 max-w-xl text-center text-lg leading-relaxed text-ink-secondary dark:text-ink-dark-secondary">
-        I bridge the gap between design and engineering, creating interfaces
-        that feel as good as they look.
+        I bridge the gap between design and engineering, creating interfaces that feel as good as
+        they look.
       </p>
 
       <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row">
@@ -34,8 +34,20 @@ export default function Hero() {
         >
           View my work
           <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 transition-all duration-700 ease-spring group-hover:translate-x-0.5 group-hover:-translate-y-[1px] group-hover:scale-105">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 13L13 1M13 1H5M13 1V9" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 13L13 1M13 1H5M13 1V9"
+                stroke="currentColor"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </span>
         </a>
@@ -55,5 +67,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

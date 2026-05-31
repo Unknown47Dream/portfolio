@@ -1,47 +1,47 @@
-import { ArrowLeft, ArrowRight, ArrowUpRight } from "@phosphor-icons/react";
+import { ArrowLeft, ArrowRight } from "@phosphor-icons/react";
 import { useEffect, useMemo, useState } from "react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const PROJECTS = [
   {
-    title: "Nexus",
-    category: "Brand Identity",
+    title: "EPOS",
+    category: "Point of Sale",
     description:
-      "A complete visual system for an AI-native studio, built around quiet confidence, adaptive marks, and a launch-ready digital presence.",
-    year: "2026",
-    metric: "42%",
-    metricLabel: "Higher launch recall",
-    palette: ["#111827", "#F4EFE7", "#D5603F"],
+      "Developed and maintained an EPOS (Electronic Point of Sale) platform featuring product management, sales processing, payment handling, and inventory tracking. Built reporting and analytics modules providing real-time insights into sales performance and business operations.",
+    year: "2024",
+    metric: "99.9%",
+    metricLabel: "System uptime",
+    palette: ["#16213E", "#F5F0EB", "#E07A5F"],
   },
   {
-    title: "Drift",
-    category: "Web Platform",
+    title: "Gift Shop",
+    category: "E-Commerce",
     description:
-      "A realtime analytics product with cinematic data layers, fast scanning states, and premium motion for dense operational workflows.",
+      "An online gift shop platform with curated product listings, cart management, and seamless checkout experience.",
     year: "2025",
     metric: "3.1x",
     metricLabel: "Faster insight loops",
     palette: ["#0E3B43", "#E7F6F2", "#F3B61F"],
   },
   {
-    title: "Forma",
-    category: "Design System",
+    title: "Kitchen Screen",
+    category: "Kitchen Display",
     description:
-      "A scalable component library for twelve product teams, unifying accessibility, design tokens, and release velocity.",
-    year: "2025",
-    metric: "12",
-    metricLabel: "Teams onboarded",
-    palette: ["#1F1A38", "#F6F4EF", "#7B8CDE"],
+      "Developed a Kitchen Display System to manage incoming orders, track ticket status, and streamline kitchen workflows in real time. Built order and ticket handling features that improved coordination between kitchen and service teams.",
+    year: "2024",
+    metric: "2.5x",
+    metricLabel: "Kitchen efficiency",
+    palette: ["#2B2118", "#F7F3EE", "#E3B23C"],
   },
   {
-    title: "Aether",
-    category: "Mobile App",
+    title: "Time Tracking",
+    category: "Productivity",
     description:
-      "A gesture-first meditation experience shaped with haptics, spatial audio, and a soft visual language for daily rituals.",
-    year: "2024",
-    metric: "88%",
-    metricLabel: "Week-two retention",
-    palette: ["#17324D", "#F5E9D7", "#63B995"],
+      "Developed features for a time tracking platform, including timesheets, attendance management, and employee activity monitoring. Built reporting and analytics tools that helped managers track productivity, work hours, and project progress.",
+    year: "2023",
+    metric: "98%",
+    metricLabel: "Timesheet compliance",
+    palette: ["#1B2838", "#F4F6F9", "#4A90D9"],
   },
 ];
 
@@ -143,17 +143,7 @@ export default function Work() {
                   </span>
                 </div>
 
-                <a
-                  href="#contact"
-                  className="group inline-flex h-12 items-center justify-center gap-2 rounded-full bg-ink px-5 text-sm font-medium text-white transition-all duration-500 ease-spring hover:-translate-y-0.5 active:scale-[0.98] dark:bg-ink-dark dark:text-surface-dark"
-                >
-                  View case
-                  <ArrowUpRight
-                    size={16}
-                    weight="bold"
-                    className="transition-transform duration-500 ease-spring group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                  />
-                </a>
+
               </div>
             </article>
 
@@ -190,13 +180,6 @@ export default function Work() {
                               {item.title}
                             </h4>
                           </div>
-                          <ArrowUpRight
-                            size={18}
-                            weight="bold"
-                            className={`mt-1 shrink-0 transition-transform duration-500 ease-spring group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ${
-                              isActive ? "opacity-90" : "opacity-45"
-                            }`}
-                          />
                         </div>
 
                         <p

@@ -142,3 +142,39 @@
     transform: translateX(8%) scaleX(1.08);
   }
 }
+
+.flash-border {
+  background: linear-gradient(
+    115deg,
+    transparent 20%,
+    #d5603f 35%,
+    #f3b61f 45%,
+    #63b995 55%,
+    transparent 70%
+  );
+  background-size: 300% 100%;
+  background-position: 200% 50%;
+  animation: flash-sweep 6s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+.dark .flash-border {
+  background: linear-gradient(
+    115deg,
+    transparent 20%,
+    #f3b61f 35%,
+    #63b995 45%,
+    #7b8cde 55%,
+    transparent 70%
+  );
+  background-size: 300% 100%;
+  background-position: 200% 50%;
+}
+
+@keyframes flash-sweep {
+  0% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: -100% 50%;
+  }
+}
